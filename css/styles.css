@@ -1,0 +1,243 @@
+*{
+box-sizing: border-box;
+padding: 0;
+margin: 0;
+}
+body{
+/* padding: 24px, 24px, 32px, 24px; */
+width: 300px;
+height: 439px;
+box-sizing: border-box;
+border-radius: 20px;
+}
+.container{
+width: 300px;
+height: 439px;
+padding: 24px 24px 32px 24px;
+box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
+/* background-color: blue; */
+/* border-radius: 20px; */
+
+}
+.box{
+width: 252px;
+/* background-color: greenyellow; */
+}
+
+.header{
+width: 252px;
+height: 76px;
+margin-bottom: 32px;
+}
+.heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.heading-left-section{
+display: flex;
+align-items: center;
+}
+.logo-img{
+width: 28px;
+height: 28px;
+}
+.logo-img > img{
+width: 28px;
+}
+.logo-heading > h1{
+font-size: 16px;
+color: rgba(18, 11, 72, 1);
+margin-left: 8px;
+font-family: 'Sora', sans-serif;
+}
+
+.heading-right-section{
+display: flex;
+align-items: center;
+}
+.close-icon{
+margin-left: 12px;
+}
+.close-icon>button{
+background: transparent;
+outline: none;
+border: none;
+}
+.description{
+margin-top: 10px;
+width: 230px;
+height: 32px;
+}
+
+.description > p{
+margin: 0;
+font-size: 14px;
+font-family: 'Sora', sans-serif;
+font-weight: 400;
+color: rgba(65, 60, 109, 1);
+
+}
+
+.controller{
+width: 252px;
+height: 275px;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: space-between;
+/* background-color: aqua; */
+}
+.window-size{
+width: 100%;
+display: flex;
+align-items: center;
+/* background-color: brown; */
+}
+.window-tab{
+width: 100%;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+/* flex-direction: column; */
+/* background-color: aqua; */
+
+}
+.window-tab button{
+width: 86px;
+height: 56px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background: transparent;
+border: none;
+outline: none;
+font-size: 14px;
+/* background: rgba(146, 143, 171, 1) */
+}
+
+.camera-section{
+width: 252px;
+height: 48px;
+/* background-color: green; */
+border: 1px solid rgba(16, 10, 66, 1);
+border-radius: 12px;
+padding: 12px 12px 12px 16px;
+/* padding-left: 60px; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.camera-left{
+display: flex;
+align-items: center;
+}
+.camera-icon{
+width: 24px;
+margin-right: 5px;
+}
+.camera-name{
+font-size: 14px;
+color: rgba(16, 10, 66, 1);
+font-family: 'Work Sans', sans-serif;
+}
+.audio-section{
+width: 252px;
+height: 48px;
+/* background-color: green; */
+border: 1px solid rgba(16, 10, 66, 1);
+border-radius: 12px;
+padding: 12px 12px 12px 16px;
+/* padding-left: 60px; */
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.audio-left{
+display: flex;
+align-items: center;
+}
+.audio-icon{
+width: 24px;
+margin-right: 5px;
+}
+.audio-name{
+font-size: 14px;
+color: rgba(16, 10, 66, 1);
+font-family: 'Work Sans', sans-serif;
+
+}
+
+/* toggle state */
+.switch {
+position: relative;
+display: inline-block;
+width: 36px;
+height: 20px;
+}
+
+.switch input {
+opacity: 0;
+width: 0;
+height: 0;
+}
+
+.slider {
+position: absolute;
+cursor: pointer;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background-color: #ccc;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 20px; /* Adjusted border radius */
+}
+
+.slider:before {
+position: absolute;
+content: "";
+height: 16px; /* Adjusted height */
+width: 16px; /* Adjusted width */
+left: 2px; /* Adjusted left position */
+bottom: 2px; /* Adjusted bottom position */
+background-color: white;
+-webkit-transition: .4s;
+transition: .4s;
+border-radius: 50%;
+}
+
+input:checked + .slider {
+background-color: rgba(18, 11, 72, 1);
+;
+}
+
+input:focus + .slider {
+box-shadow: 0 0 1px rgba(18, 11, 72, 1);
+;
+}
+
+input:checked + .slider:before {
+-webkit-transform: translateX(16px); /* Adjusted translation */
+-ms-transform: translateX(16px); /* Adjusted translation */
+transform: translateX(16px); /* Adjusted translation */
+}
+
+
+/* start recording btn */
+.start-recording-btn{
+width: 252px;
+height: 51px;
+
+}
+.start-recording-btn > button{
+width: 252px;
+height: 51px;
+background-color: rgba(18, 11, 72, 1);
+color: #fff;
+font-size: 16px;
+font-family: 'Work Sans', sans-serif;
+border-radius: 12px;
+}
