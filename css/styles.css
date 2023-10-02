@@ -4,7 +4,6 @@ padding: 0;
 margin: 0;
 }
 body{
-/* padding: 24px, 24px, 32px, 24px; */
 width: 300px;
 height: 439px;
 box-sizing: border-box;
@@ -15,13 +14,9 @@ width: 300px;
 height: 439px;
 padding: 24px 24px 32px 24px;
 box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.1);
-/* background-color: blue; */
-/* border-radius: 20px; */
-
 }
 .box{
 width: 252px;
-/* background-color: greenyellow; */
 }
 
 .header{
@@ -93,15 +88,13 @@ justify-content: space-between;
 width: 100%;
 display: flex;
 align-items: center;
-/* background-color: brown; */
 }
 .window-tab{
 width: 100%;
 display: flex;
 justify-content: space-evenly;
 align-items: center;
-/* flex-direction: column; */
-/* background-color: aqua; */
+
 
 }
 .window-tab button{
@@ -114,17 +107,14 @@ background: transparent;
 border: none;
 outline: none;
 font-size: 14px;
-/* background: rgba(146, 143, 171, 1) */
 }
 
 .camera-section{
 width: 252px;
 height: 48px;
-/* background-color: green; */
 border: 1px solid rgba(16, 10, 66, 1);
 border-radius: 12px;
 padding: 12px 12px 12px 16px;
-/* padding-left: 60px; */
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -145,11 +135,9 @@ font-family: 'Work Sans', sans-serif;
 .audio-section{
 width: 252px;
 height: 48px;
-/* background-color: green; */
 border: 1px solid rgba(16, 10, 66, 1);
 border-radius: 12px;
 padding: 12px 12px 12px 16px;
-/* padding-left: 60px; */
 display: flex;
 justify-content: space-between;
 align-items: center;
@@ -169,7 +157,6 @@ font-family: 'Work Sans', sans-serif;
 
 }
 
-/* toggle state */
 .switch {
 position: relative;
 display: inline-block;
@@ -220,13 +207,11 @@ box-shadow: 0 0 1px rgba(18, 11, 72, 1);
 }
 
 input:checked + .slider:before {
--webkit-transform: translateX(16px); /* Adjusted translation */
--ms-transform: translateX(16px); /* Adjusted translation */
-transform: translateX(16px); /* Adjusted translation */
+-webkit-transform: translateX(16px); 
+-ms-transform: translateX(16px); 
+transform: translateX(16px);
 }
 
-
-/* start recording btn */
 .start-recording-btn{
 width: 252px;
 height: 51px;

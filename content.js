@@ -1,11 +1,6 @@
-console.log("Hi, I have been injected whoopie!!!")
-
-// 
-var recorder = null
+ var recorder = null
 function onAccessApproved(stream) {
-    // here 
     recorder = new MediaRecorder(stream);
-    // Arrays to store video and audio data
     let videoChunks = [];
     let audioChunks = [];
     console.log("videoChunks:", videoChunks);
@@ -37,25 +32,8 @@ function onAccessApproved(stream) {
         // sendChunkToBackend(recordedBlob);
         console.log("recordedBlob has been assigned")
         console.log(recordedBlob)
-        // if (recordedBlob.type === 'video/webm') {
-        //     console.log("inside recorder if condition");
-        //     videoChunks.push(recordedBlob);
-        // } else if (recordedBlob.type === 'audio/webm') {
-        //     audioChunks.push(recordedBlob);
-        // }
-        //________________________  this will create a link and save the webm file in local storage ______________________________
-        // let url = URL.createObjectURL(recordedBlob);
-        // let a = document.createElement("a");
-        // a.style.display = "none";
-        // a.href = url;
-        // a.download = "screen-recording.webm"
-        // document.body.appendChild(a);
-        // a.click();
-        // document.body.removeChild(a);
-        // URL.revokeObjectURL(url);
-    }
 }
-// this is 
+}
 function sendChunkToBackend(blob) {
     const formData = new FormData();
     formData.append('file', blob, 'screen-recording.webm');
